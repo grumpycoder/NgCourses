@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <base href="/" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -38,5 +39,11 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script type="text/javascript" src="src/client/runtime.js"></script>
+    <script type="text/javascript" src="src/client/es2015-polyfills.js" nomodule></script>
+    <script type="text/javascript" src="src/client/polyfills.js"></script>
+    <script type="text/javascript" src="src/client/styles.js"></script>
+    <script type="text/javascript" src="src/client/vendor.js"></script>
+    <script type="text/javascript" src="src/client/main.js"></script>
 </body>
 </html>
