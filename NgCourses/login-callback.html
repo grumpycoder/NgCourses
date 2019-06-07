@@ -1,0 +1,20 @@
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        console.log(urlParams.get('token'));
+
+        console.log('login-callback', urlParams.get('token'));
+
+        var url = 'http://localhost:56261/api/auth/authorize?token=1234'
+
+        function httpGet(theUrl) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", theUrl, false); // false for synchronous request
+            xmlHttp.send(null);
+            return xmlHttp.responseText;
+        }
+
+
+        var r = httpGet(url); 
+        console.log('response', r);
+</script>
+

@@ -25,6 +25,15 @@ namespace NgCourses
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/Script/Bundles")
+                .Include(
+                    "~/src/client/inline.*",
+                    "~/src/client/polyfills.*",
+                    "~/src/client/scripts.*",
+                    "~/src/client/vendor.*",
+                    "~/src/client/main.*"));
+
         }
     }
 }

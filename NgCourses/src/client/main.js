@@ -160,7 +160,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  dashboard works!\n</p>\n"
+module.exports = "<p>\n  home dashboard works!\n</p>\n"
 
 /***/ }),
 
@@ -204,7 +204,7 @@ var DashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a [routerLink]=\"['/courses']\" routerLinkActive=\"active\">Courses</a>\r\n"
+module.exports = "<a [routerLink]=\"['/']\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\"\r\n  >Home</a\r\n>\r\n|\r\n<a [routerLink]=\"['/courses']\" routerLinkActive=\"active\">Courses</a>\r\n"
 
 /***/ }),
 
@@ -215,7 +215,7 @@ module.exports = "<a [routerLink]=\"['/courses']\" routerLinkActive=\"active\">C
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdmJhci9uYXZiYXIuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = ".active {\n  background-color: blue;\n  color: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2YmFyL0Q6XFxzb3VyY2VcXE5nQ291cnNlc1xcTmdDb3Vyc2VzXFxjbGllbnQvc3JjXFxhcHBcXG5hdmJhclxcbmF2YmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQXNCO0VBQ3RCLFlBQVksRUFBQSIsImZpbGUiOiJzcmMvYXBwL25hdmJhci9uYXZiYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWN0aXZlIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
