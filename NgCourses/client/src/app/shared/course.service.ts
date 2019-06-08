@@ -9,18 +9,10 @@ export class CourseService {
   dataSource: any;
   private url: string = "http://localhost:4300/api/courses";
 
-  constructor(private http: HttpClient) {
-    // this.dataSource = AspNetData.createStore({
-    //   key: "id",
-    //   loadUrl: this.url
-    //   //  onBeforeSend: function(method, ajaxOptions) {
-    //   //    ajaxOptions.xhrFields = { withCredentials: true };
-    //   //  }
-    // });
-  }
+  constructor(private http: HttpClient) {}
 
   GetCourseData(): any[] {
-    let data = AspNetData.createStore({
+    let data: any = AspNetData.createStore({
       key: "id",
       loadUrl: this.url
     });
