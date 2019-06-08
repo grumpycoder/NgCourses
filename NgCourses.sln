@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NgCourses.Core", "NgCourses
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NgCourses.Infrastructure", "NgCourses.Infrastructure\NgCourses.Infrastructure.csproj", "{F7137323-04F8-491E-A66A-06E4BE71EECE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthMock", "AuthMock\AuthMock.csproj", "{87CEBBDE-BD74-48FF-91AC-02C1AC975447}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F7137323-04F8-491E-A66A-06E4BE71EECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7137323-04F8-491E-A66A-06E4BE71EECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7137323-04F8-491E-A66A-06E4BE71EECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CEBBDE-BD74-48FF-91AC-02C1AC975447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CEBBDE-BD74-48FF-91AC-02C1AC975447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CEBBDE-BD74-48FF-91AC-02C1AC975447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CEBBDE-BD74-48FF-91AC-02C1AC975447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
