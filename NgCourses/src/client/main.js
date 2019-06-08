@@ -8,6 +8,10 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./career-tech/career-tech.module": [
+		"./src/app/career-tech/career-tech.module.ts",
+		"career-tech-career-tech-module"
+	],
 	"./courses/course.module": [
 		"./src/app/courses/course.module.ts",
 		"courses-course-module"
@@ -54,8 +58,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["DashboardComponent"] },
-    { path: 'courses', loadChildren: './courses/course.module#CourseModule' }
+    { path: "", component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["DashboardComponent"] },
+    { path: "courses", loadChildren: "./courses/course.module#CourseModule" },
+    {
+        path: "career-tech",
+        loadChildren: "./career-tech/career-tech.module#CareerTechModule"
+    }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import * as AspNetData from "devextreme-aspnet-data-nojquery";
+import { ICourse } from "../models/course";
 
 @Injectable({
   providedIn: "root"
@@ -22,5 +23,9 @@ export class CourseService {
   GetCourses(): any[] {
     let courses = [{ id: 1, name: "math" }, { id: 2, name: "science" }];
     return courses;
+  }
+
+  getCourse(id: number): any {
+    return this.http.get<ICourse>(this.url + "/" + id + "/full");
   }
 }
