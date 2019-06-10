@@ -4,7 +4,7 @@
 
         console.log('login-callback', urlParams.get('token'));
 
-        var url = 'http://localhost:56261/api/auth/authorize?token=1234'
+        var url = 'http://localhost:4301/api/auth?token=1234';
 
         function httpGet(theUrl) {
             var xmlHttp = new XMLHttpRequest();
@@ -14,7 +14,10 @@
         }
 
 
-        var r = httpGet(url); 
+        var r = JSON.parse(httpGet(url)); 
         console.log('response', r);
+        console.log('response', r.bearerToken);
+        localStorage.setItem("bearerToken",
+            r.bearerToken);
 </script>
 
